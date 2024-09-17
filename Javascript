@@ -1,0 +1,16 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const studentForm = document.getElementById('student-form');
+    const teacherForm = document.getElementById('teacher-form');
+
+    studentForm.addEventListener('submit', function(event) {
+        if (!confirm('Are you sure you want to submit the student application form?')) {
+            event.preventDefault();
+        }
+    });
+
+    teacherForm.addEventListener('submit', function(event) {
+        if (!confirm('Are you sure you want to submit the teacher application form?')) {
+            event.preventDefault();
+        }
+    });
+});
